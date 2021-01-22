@@ -16,7 +16,7 @@ namespace While
             while (Begining <= userInput)
             {
                 Console.WriteLine(Begining);
-                Begining = Begining + 2;
+                Begining += 2;
             }
         }
     }
