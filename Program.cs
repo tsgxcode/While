@@ -4,20 +4,26 @@ namespace While
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Practicing while/do while loops
-            Console.WriteLine("Please enter a number: ");
-            int userInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter a Number: ");
+            int UserNumber = int.Parse(Console.ReadLine());
 
-            int Begining = 0;
+            int Start = 0;
 
-            //Is 0 greater then or equil to the user's input
-            while (Begining <= userInput)
+            while (Start <= UserNumber)
             {
-                Console.WriteLine(Begining);
-                Begining += 2;
+                //Displayes each number added till the UserNumber is reached. In this case +6.
+                //e.g. UserNumber is 50, 0 6 12 18 24 30 36 42 48 is returned to the console
+                Console.Write(Start + " ");
+                Start += 6;
+
             }
+
+
         }
     }
+
 }
+
